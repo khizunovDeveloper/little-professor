@@ -22,23 +22,22 @@ public class Play {
 	}
 
 	public static int getLevel() {
-		System.out.println("enter dif level (0-2)");
+		System.out.println("enter dif level (0-2) to stop enter 99");
 		return input.nextInt();
 	}
 
-	public static int showMessage(int N) {
+	public static void showMessage(int N) {
 		switch (N) {
 		case 1:
 			System.out.println("good");
 			break;
 		case 2:
-			System.out.println("false");
+			System.out.println("wrong");
 			break;
 		}
-		return N;
 	}
 
-	public static int showGrade(int G) {
+	public static void showGrade(int G) {
 		switch (G) {
 		case 10:
 		    System.out.println("perfect");
@@ -58,7 +57,6 @@ public class Play {
 		default:    
 	        System.out.println("bad");
 		}
-		return G;
 	}
 
 }

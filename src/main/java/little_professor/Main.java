@@ -34,26 +34,26 @@ public class Main {
 				int expected = Calculate.add(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
-			} else if (i > 5) {
+			} else {
 				System.out.printf("%d-%d=", a, b);
 				int ans = input.nextInt();
 				int expected = Calculate.sub(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			}
 
 		}
-		System.out.println("the grade:" + grade);
+		Play.showGrade(grade);
 	}
 
 	static void levelOne() {
@@ -67,10 +67,10 @@ public class Main {
 				int expected = Calculate.add(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			} else if (i > 3) {
 				System.out.printf("%d-%d=", a, b);
@@ -78,10 +78,10 @@ public class Main {
 				int expected = Calculate.sub(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			}
 		}
@@ -94,10 +94,10 @@ public class Main {
 				int expected = Calculate.multiply(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			} else if (i > 3) {
 				System.out.printf("%d/%d=", a, b);
@@ -105,14 +105,14 @@ public class Main {
 				double expected = Calculate.divide(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			}
 		}
-		System.out.println("the grade:" + grade);
+		Play.showGrade(grade);
 	}
 
 	static void levelTwo() {
@@ -127,10 +127,10 @@ public class Main {
 				int expected = Calculate.add(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			} else if (i == 2) {
 				System.out.printf("%d-%d=", a, b);
@@ -138,10 +138,10 @@ public class Main {
 				int expected = Calculate.sub(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			} else if (i == 3) {
 				System.out.printf("%d x %d=", a, b);
@@ -149,20 +149,20 @@ public class Main {
 				int expected = Calculate.multiply(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 			} else if (i == 4) {
 				System.out.printf("%d(%d X %d))=", b, a, a);
 				int ans = input.nextInt();
 				int expected = Calculate.power(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			} else if (i == 5) {
 				System.out.printf("how many times you need do this: %d - %d until %d<=%d =", a, b, a, b);
@@ -170,10 +170,10 @@ public class Main {
 				int expected = Calculate.div(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			} else if (i >= 6 && i <= 8) {
 				System.out.printf("%d / %d=", a, b);
@@ -181,10 +181,10 @@ public class Main {
 				double expected = Calculate.divide(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			} else if (i > 8) {
 				System.out.printf("%d % %d)=", a, b);
@@ -192,13 +192,13 @@ public class Main {
 				int expected = Calculate.power(a, b);
 
 				if (ans == expected) {
-					System.out.println("Congrats");
-					grade = grade + 10;
+					Play.showMessage(1);
+					grade++;
 				} else {
-					System.out.println("Wrong: the answer is: " + expected);
+					Play.showMessage(2);
 				}
 			}
 		}
-		System.out.println("the grade:" + grade);
+		Play.showGrade(grade);
 	}
 }
