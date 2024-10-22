@@ -6,13 +6,16 @@ public class Main {
 	public static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		int lvl = Play.getLevel();
+		int lvl =0;
 		while (lvl != 99) {
+			lvl = Play.getLevel();
 			switch (lvl) {
 			case 0:
 				levelZero();
 			case 1:
 				levelOne();
+			case 2:
+				levelTwo();
 			}
 		}
 	}
@@ -45,9 +48,9 @@ public class Main {
 					System.out.println("Wrong: the answer is: " + expected);
 				}
 			}
-			System.out.println("the grade:" + grade);
 
 		}
+		System.out.println("the grade:" + grade);
 	}
 
 	static void levelOne() {
@@ -148,7 +151,7 @@ public class Main {
 				} else
 					System.out.println("Wrong: the answer is: " + expected);
 			} else if (i == 4) {
-				System.out.printf("%d(%d%d))=", b, a, a);
+				System.out.printf("%d(%d X %d))=", b, a, a);
 				int ans = input.nextInt();
 				int expected = Calculate.power(a, b);
 
@@ -159,7 +162,7 @@ public class Main {
 					System.out.println("Wrong: the answer is: " + expected);
 				}
 			} else if (i == 5) {
-				System.out.printf("%d - %d until %d<=%d =", a, b, a, b);
+				System.out.printf("how many times you need do this: %d - %d until %d<=%d =", a, b, a, b);
 				int ans = input.nextInt();
 				int expected = Calculate.div(a, b);
 
