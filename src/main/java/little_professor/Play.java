@@ -50,10 +50,10 @@ public class Play {
 		    System.out.println("good");
             break;
 		case 7:    
-		    System.out.println("okay");
+		    System.out.println("almost good");
 	        break;
 		case 6:    
-		    System.out.println("almost good");
+		    System.out.println("okay");
 		    break;
 		default:    
 	        System.out.println("bad");

@@ -12,10 +12,13 @@ public class Main {
 			switch (lvl) {
 			case 0:
 				levelZero();
+				break;
 			case 1:
 				levelOne();
+				break;
 			case 2:
 				levelTwo();
+				break;
 			}
 		}
 	}
